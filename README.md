@@ -1,13 +1,3 @@
----
-title: "Captstone Analysis"
-output: html_document
-date: "2023-12-29"
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # Case Study 1: 
 Notes: setting up my R environment by loading the 'tidyverse','dplyr', 'ggplot2' and 'lubridate' packages
 ```{r Uploading packages for Analysis}
