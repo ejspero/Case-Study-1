@@ -1,6 +1,6 @@
 # Case Study 1: How does a bike-share navigate speedy success?
 
-```
+
 ##Table of Contents
 -[Project Overview](##Project Overview)
 -[Section 1: Cleaning and Preparing Data](##Section 1: Cleaning and Preparing Data)
