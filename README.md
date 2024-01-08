@@ -173,9 +173,57 @@ Output:
 > 
 ```
 ## Section 4: Visualizing Data
-From here, we can find that the 
+The visualizations created in this section will be at the top of this repository in the files section. 
+
+
+In this section, I will be describing my findings from the visualizations I created.
+
+### Table 1: Number of rides per week for both casual and annual members.
+
+
+
+Code used to make table: 
+```{r}
+# seeing the difference between how many casual and members ride at different times of the week
+trips_whole_yr_rev %>%
+  group_by(member_casual, day_of_week) %>%
+  summarise(number_of_ride = n()) %>%
+  ggplot(mapping=aes(x= day_of_week,y=number_of_ride,fill= member_casual,label = number_of_ride)) +
+  geom_bar(position = "dodge", stat = "identity") +geom_text(colour = "white", size = 3,
+                                                             vjust = 1.5, position = position_dodge(.9))
+```
+*Please refer to the weekly num_of_rides.pdf file in files section*
+
+
+From the num of rides.pdf  table, we can find that the 
  - the peak amount of casual riders appears on Saturday at 396053 rides
  - the peak amount of full time members appears on Sunday at 581861 rides 
  - the least amount of casual riders appears on Sunday at 231038 rides
- - the least amount of casual riders appears on Sunday at 396053 rides 
+ - the least amount of full time members appears on Sunday at 396053 rides
+
+### Table 2: Number of rides per month for both casual and annual members.
+
+
+### Table 3: Table 4: Average ride length in comparison to casual and annual members each day of the week
+```{r}
+# seeing how long members ride in comparison to casual and members each day of the week 
+trips_whole_yr_rev %>%
+  group_by(member_casual, day_of_week) %>%
+  summarise(average_ride_length = n()) %>%
+  ggplot(mapping=aes(x= day_of_week,y=average_ride_length,fill= member_casual,label = average_ride_length)) 
++geom_bar(position = "dodge", stat = "identity") +geom_text(size = 3, position = position_stack(vjust = 0.25))
+```
+
+
+### Table 4: Average ride length in comparison to casual and annual members each month
+```{r}
+# seeing how long members ride in comparison to casual and members each month
+trips_whole_yr_rev %>%
+  group_by(member_casual, month) %>%
+  summarise(average_ride_length = n()) %>%
+  ggplot(mapping=aes(x= month,y=average_ride_length,fill= member_casual, label = average_ride_length)) +
+  geom_bar(position = "dodge", stat = "identity") +geom_text(colour = "white", size = 3,
+                                                             vjust = 1.5, position = position_dodge(.9))
+```
+
 ## Section 5: Conclusion
