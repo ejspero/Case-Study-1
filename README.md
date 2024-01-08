@@ -192,17 +192,20 @@ trips_whole_yr_rev %>%
   geom_bar(position = "dodge", stat = "identity") +geom_text(colour = "white", size = 3,
                                                              vjust = 1.5, position = position_dodge(.9))
 ```
-*Please refer to the weekly num_of_rides.pdf file in files section*
+*Please refer to the weekly_num_of_rides.pdf file in files section*
 
 
-From the num of rides.pdf  table, we can find that the 
- - the peak amount of casual riders appears on Saturday at 396053 rides
- - the peak amount of full time members appears on Sunday at 581861 rides 
- - the least amount of casual riders appears on Sunday at 231038 rides
- - the least amount of full time members appears on Sunday at 396053 rides
+From the weekly_num_of_rides.pdf table, we can find that the 
+ - the peak amount of casual riders appears on Saturday at 396,053 rides
+ - the peak amount of full time members appears on Sunday at 581,861 rides 
+ - the least amount of casual riders appears on Sunday at 231,038 rides
+ - the least amount of full time members appears on Sunday at 396,053 rides
 
 ### Table 2: Number of rides per month for both casual and annual members.
+*Please refer to the  month_num_of_rides.pdf file in files section*
 
+
+From the month_num_of_rides.pdf table, we can find that the 
 
 ### Table 3: Table 4: Average ride length in comparison to casual and annual members each day of the week
 ```{r}
@@ -214,6 +217,10 @@ trips_whole_yr_rev %>%
 +geom_bar(position = "dodge", stat = "identity") +geom_text(size = 3, position = position_stack(vjust = 0.25))
 ```
 
+*Please refer to the  week_avg_ride_length.pdf file in files section*
+
+
+From the week_avg_ride_length.pdf table, we can find that the 
 
 ### Table 4: Average ride length in comparison to casual and annual members each month
 ```{r}
@@ -225,5 +232,8 @@ trips_whole_yr_rev %>%
   geom_bar(position = "dodge", stat = "identity") +geom_text(colour = "white", size = 3,
                                                              vjust = 1.5, position = position_dodge(.9))
 ```
+*Please refer to the  month_avg_ride_length.pdf file in files section*
 
+
+From the month_avg_ride_length.pdf table, we can find that the 
 ## Section 5: Conclusion
