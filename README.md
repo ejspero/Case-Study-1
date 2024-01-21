@@ -194,18 +194,20 @@ trips_whole_yr_rev %>%
 *Graph starts with 11 for November 2022 to 10 October 2023*
 
 From the weekly_num_of_rides.pdf table, we can find that the 
- - the peak amount of casual riders appears on Saturdays at 396,053 rides this year.
- - the peak amount of full time members appears on Sunday at 581,861 rides this year.
- - the least amount of casual riders appears on Sunday at 231,038 rides this year.
- - the least amount of full time members appears on Sunday at 396,053 rides this year.
+ - the peak amount of casual riders appears on Thursdays at 396,053 rides this year.
+ - the peak amount of full time members appears on Sundays at 581,861 rides this year.
+ - the least amount of casual riders appears on Saturdays at 231,038 rides this year.
+ - the least amount of full time members appears on Fridays at 397,157 rides this year.
 
 ### Table 2: Number of rides per month for both casual and annual members.
+```{r}
 trips_whole_yr_rev %>%
   group_by(member_casual, month) %>%
   summarise(number_of_ride = n()) %>%
   ggplot(mapping=aes(x= month,y=number_of_ride,fill= member_casual,label = number_of_ride)) +
   geom_bar(position = "dodge", stat = "identity")+  geom_text(colour = "white", size = 3,
                                                               vjust = 1.5, position = position_dodge(.9))
+```
 
 ![[([month num rides.pdf](https://github.com/ejspero/Case-Study-1/blob/main/month%20num%20rides.pdf))](https://github.com/ejspero/Case-Study-1/blob/main/month_num_rides.pdf)](https://github.com/ejspero/Case-Study-1/blob/main/month_num_rides.PNG)
 *Graph starts with 1 for Monday to 7 for Sunday*
@@ -240,3 +242,12 @@ From the month_avg_ride_length.pdf table, we can find that the
  - the lowest average ride length for full time members appears on January 2023 averaging at 0:10:04
 
 ## Section 5: Conclusion
+
+
+After going through the process of analyzing the data, it can be concluded that more people like to rent out bikes in the summer and the least amount of people ride in the winter. We can also see that more people like to ride on Thursdays and Sundays rather than Fridays and Sundays. This information shows that we need to focus our marketing campaigns on the following:
+
+ - Advertise traveling to stations in warmer climates to get more people interested in riding in the winter. I customers know their options in stations, they may be more interested in getting an annual membership 
+
+ - We can also offer discounts on the annual membership during the winter to get more people to register for a full time membership
+
+ 
