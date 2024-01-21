@@ -200,7 +200,12 @@ From the weekly_num_of_rides.pdf table, we can find that the
  - the least amount of full time members appears on Sunday at 396,053 rides
 
 ### Table 2: Number of rides per month for both casual and annual members.
-*Please refer to the  month_num_of_rides.pdf file in files section*
+trips_whole_yr_rev %>%
+  group_by(member_casual, month) %>%
+  summarise(number_of_ride = n()) %>%
+  ggplot(mapping=aes(x= month,y=number_of_ride,fill= member_casual,label = number_of_ride)) +
+  geom_bar(position = "dodge", stat = "identity")+  geom_text(colour = "white", size = 3,
+                                                              vjust = 1.5, position = position_dodge(.9))
 
 ![[([month num rides.pdf](https://github.com/ejspero/Case-Study-1/blob/main/month%20num%20rides.pdf))](https://github.com/ejspero/Case-Study-1/blob/main/month_num_rides.pdf)](https://github.com/ejspero/Case-Study-1/blob/main/month_num_rides.PNG)
 
@@ -216,19 +221,8 @@ From the month_num_of_rides.pdf table, we can find that the
 From the week_avg_ride_length.pdf table, we can find that the 
 
 ### Table 4: Average ride length in comparison to casual and annual members each month
-```{r}
-# seeing how long members ride in comparison to casual and members each month
-trips_whole_yr_rev %>%
-  group_by(member_casual, month) %>%
-  summarise(average_ride_length = n()) %>%
-  ggplot(mapping=aes(x= month,y=average_ride_length,fill= member_casual, label = average_ride_length)) +
-  geom_bar(position = "dodge", stat = "identity") +geom_text(colour = "white", size = 3,
-                                                             vjust = 1.5, position = position_dodge(.9))
-```
+
 ![Alt text](https://github.com/ejspero/Case-Study-1/blob/main/avg_ride_length_month.jpg)
-
-
-From the week_avg_ride_length.pdf table, we can find that the *
 
 
 From the month_avg_ride_length.pdf table, we can find that the 
