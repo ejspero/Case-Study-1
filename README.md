@@ -190,7 +190,7 @@ trips_whole_yr_rev %>%
   geom_bar(position = "dodge", stat = "identity") +geom_text(colour = "white", size = 3,
                                                              vjust = 1.5, position = position_dodge(.9))
 ```
-*Please refer to the weekly_num_of_rides.pdf file in files section*
+![*Please refer to the weekly_num_of_rides.pdf file in files section*](https://github.com/ejspero/Case-Study-1/blob/main/weekly_num_rides.PNG)
 
 
 From the weekly_num_of_rides.pdf table, we can find that the 
@@ -202,7 +202,7 @@ From the weekly_num_of_rides.pdf table, we can find that the
 ### Table 2: Number of rides per month for both casual and annual members.
 *Please refer to the  month_num_of_rides.pdf file in files section*
 
-![Alt text]([month num rides.pdf](https://github.com/ejspero/Case-Study-1/blob/main/month%20num%20rides.pdf))
+![[([month num rides.pdf](https://github.com/ejspero/Case-Study-1/blob/main/month%20num%20rides.pdf))](https://github.com/ejspero/Case-Study-1/blob/main/month_num_rides.pdf)](https://github.com/ejspero/Case-Study-1/blob/main/month_num_rides.PNG)
 
 
 From the month_num_of_rides.pdf table, we can find that the 
