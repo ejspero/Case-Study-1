@@ -191,13 +191,13 @@ trips_whole_yr_rev %>%
                                                              vjust = 1.5, position = position_dodge(.9))
 ```
 ![*Please refer to the weekly_num_of_rides.pdf file in files section*](https://github.com/ejspero/Case-Study-1/blob/main/weekly_num_rides.PNG)
-
+*Graph starts with 11 for November 2022 to 10 October 2023*
 
 From the weekly_num_of_rides.pdf table, we can find that the 
- - the peak amount of casual riders appears on Saturday at 396,053 rides
- - the peak amount of full time members appears on Sunday at 581,861 rides 
- - the least amount of casual riders appears on Sunday at 231,038 rides
- - the least amount of full time members appears on Sunday at 396,053 rides
+ - the peak amount of casual riders appears on Saturdays at 396,053 rides this year.
+ - the peak amount of full time members appears on Sunday at 581,861 rides this year.
+ - the least amount of casual riders appears on Sunday at 231,038 rides this year.
+ - the least amount of full time members appears on Sunday at 396,053 rides this year.
 
 ### Table 2: Number of rides per month for both casual and annual members.
 trips_whole_yr_rev %>%
@@ -208,22 +208,35 @@ trips_whole_yr_rev %>%
                                                               vjust = 1.5, position = position_dodge(.9))
 
 ![[([month num rides.pdf](https://github.com/ejspero/Case-Study-1/blob/main/month%20num%20rides.pdf))](https://github.com/ejspero/Case-Study-1/blob/main/month_num_rides.pdf)](https://github.com/ejspero/Case-Study-1/blob/main/month_num_rides.PNG)
-
+*Graph starts with 1 for Monday to 7 for Sunday*
 
 From the month_num_of_rides.pdf table, we can find that the 
-
-### Table 3: Table 4: Average ride length in comparison to casual and annual members each day of the week
-
+ - the peak amount of casual riders appear on August 2023 with 459,478 rides this year.
+ - the peak amount of full time members appears on July 2023 at 326,388 rides this year.
+ - the least amount of casual riders appear on January 2023 at 39,710 rides this year.
+ - the least amount of full time members appears on December 2023 at 136,559 rides this year.
+ - 
+### Table 3: Average ride length in comparison to casual and annual members each day of the week
+For the last two tables, I used Excel to complete them. I created pivot tables for each month and then combined all the pivots tables to create the following graphs. Can be seen on the Merge rides Excel file.
 
 ![Alt text](https://github.com/ejspero/Case-Study-1/blob/main/avg_ride_length_week.jpg)
 
 
 From the week_avg_ride_length.pdf table, we can find that the 
-
+ - the peak average ride length for casual riders appears on Mondays averaging at 0:22:42
+ - the peak average ride length for full time members appears on Sundays averaging at 0:12:39
+ - the lowest average ride length for casual riders appears on Fridays averaging at 0:16:59
+ - the lowest average ride length for full time members appears on Tuesdays averaging at  0:11:04
+ - 
 ### Table 4: Average ride length in comparison to casual and annual members each month
 
 ![Alt text](https://github.com/ejspero/Case-Study-1/blob/main/avg_ride_length_month.jpg)
-
+*Graph starts with 11 for November 2022 to 10 October 2023*
 
 From the month_avg_ride_length.pdf table, we can find that the 
+ - the peak average ride length for casual riders appears on July 2023 averaging at 0:23:35
+ - the peak average ride length for full time members appears on July 2023 averaging at 0:13:13
+ - the lowest average ride length for casual riders appears on December 2022 averaging at 0:14:01
+ - the lowest average ride length for full time members appears on January 2023 averaging at 0:10:04
+
 ## Section 5: Conclusion
